@@ -206,7 +206,7 @@ $PageHeading4: 18px $Normal;
 		.ya-logo-container	{
 			position:relative; min-height: 240px;
 			.ya-logo-watermark{
-				background:url('../images/bg-logo.png') no-repeat; 
+				background:url('../../Images/edit-teacher-profile/bg-logo.png') no-repeat; 
 				position:absolute; 
 				width:489px; 
 				height:446px;
@@ -223,7 +223,7 @@ $PageHeading4: 18px $Normal;
 			
 		}
 				@media(max-width:510px){
-				 background:url("../images/ya-pink-flower.png") no-repeat scroll 0 0 / 100% auto transparent;  
+				 background:url("../../Images/edit-teacher-profile/ya-pink-flower.png") no-repeat scroll 0 0 / 100% auto transparent;  
 				 position:relative; padding:0px;
 					background-size:100%;
 					 height: auto;
@@ -333,7 +333,7 @@ $PageHeading4: 18px $Normal;
 			}
 			.ya-my-profile-pic{display:none;
 				@media(max-width:767px){display:block;}
-				.ya-edit-button{position:relative; z-index:100;}
+				.ya-edit-button{z-index:100;}
 			}
 			.ya-yoga-taught{display:none;
 				@media(max-width:767px){display:block;}
@@ -496,10 +496,19 @@ $PageHeading4: 18px $Normal;
 	.ya-editable-panel
 	{
 		@include makeFluidRow();border:2px dashed #888888; padding: 0px;@include border-radius(4px);margin: 0 0 10px;
-		.ya-delete-button{ display:none;float: right;color: #96171A;font-family: ProximaNova-Semibold;padding:0; margin-bottom: -22px; position: relative;    z-index: 100;
+		position:relative;
+		
+		//---- 24 Oct 2013, Change button position: absolute, and its position properties right: 5px; bottom: 10px; margin:0;
+		//---- due to old style it little jummpy becouse its position static.
+		/* Changes Here */
+	   .ya-delete-button{display:none;color:#96171A;font-family:ProximaNova-Semibold;padding:0;position:absolute;top:5px;right:10px;z-index:100;					margin:0;
 			@media(max-width: 979px){ display: block;}
 		}
-		.ya-edit-button{display:none;float: right;margin-top: -33px;z-index:100; position:relative;
+		
+		//---- 24 Oct 2013, Change button position: absolute, and its position properties right: 5px; bottom: 10px; margin:0;
+		//---- due to old style it little jummpy becouse its position static.
+		/* Changes Here */
+		.ya-edit-button{display:none; z-index:100; position:absolute; right:10px; bottom:10px; margin:0;
 			.ya-edit-icon{ color: #FFFFFF;    font-size: 14px;    padding: 0 3px 0 0;}
 			@media(max-width: 979px){ display: block;}
 		}
@@ -790,4 +799,17 @@ select.span12{
 }    
 textarea.span12{
  *width:95% !important;   
+}
+//=== remove from Global Styles screen.scss ==//
+
+/* line 14, ../css-src/partials/_alert_badge_label.scss */
+// .alert span {
+//  float: right;
+//  font-size: 20px;
+//  position: relative; // remove this property
+//  right: -35px; // remove this property
+//}
+
+.alert span{
+	position:static;
 }
