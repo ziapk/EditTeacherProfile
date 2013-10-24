@@ -1,0 +1,1489 @@
+﻿<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html>
+<!--<![endif]-->
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Teacher Profile</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="css/bootstrap-responsive.css" />
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery.ui.all.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link href="css/edit-teacher-profile.css" rel="stylesheet">
+
+    <!--[if lte IE 8]>
+    <link type="text/css" rel="stylesheet" href="css/ie.css" />
+    <script type="text/javascript" src="js/modernizr.min.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 6]>
+    <script type="text/javascript" src="js/belated.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.custom.82095.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            if (!($('html').hasClass('boxsizing'))) {
+                $('.ya-widget, .ya-widget *').each(function () {
+                    var fullW = $(this).outerWidth(),
+						actualW = $(this).width(),
+						wDiff = fullW - actualW,
+						newW = actualW - wDiff;
+                    $(this).css('width', newW);
+                });
+            }
+        });
+	</script>
+    <!--<script src="js/bootstrap.js"></script>-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+    <script src="js/javascript.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container-fluid page-header ya-pageheader">
+        <!--header start -->
+        <header>
+            <div class=" container">
+                <div class="row-fluid">
+                    <div class="span3 ya-logo">
+                        <!-- Put Site LOGO here -->
+                        <!--<a href="#"><img src="images/logo.png" alt="Logo"></a> -->
+                    </div>
+                    <!--End span2 -->
+                    <div class="span9 ya-tagline">
+                        <!--Put TagLine Here -->
+                        <!--<h2>many paths, one yoga alliance</h2> -->
+                    </div>
+                    <!--End span10 -->
+                </div>
+                <!--End row-fluid -->
+            </div>
+            <!--container-->
+        </header>
+        <!--header end -->
+    </div>
+    <!--container-fluid page-header ya-pageheader -->
+
+    <!--navigation start -->
+    <div class="nav-wrap ya-pagenav">
+        <div class="container">
+            <nav>
+                <!--<a class="ya-action menu-btn visible-phone" href="#"><span data-icon="&#x68;"></span> Menu</a> -->
+                <ul class="inline">
+                    <!--Put Main Menu here-->
+
+                    <!--<li><a href="#">Home</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Reasons to Join</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li> -->
+                </ul>
+                <!--ya-pagenav -->
+            </nav>
+        </div>
+        <!--End container -->
+    </div>
+    <!--nav-wrap -->
+    <!--navigation end -->
+    <div class="ya-account-bar">
+        <div class="container">
+
+            <ul class="inline">
+                <!--Put Account Bar here -->
+                <!--<li><a href="#" class="ya-link">Create Account</a></li>
+            <li><a href="#" class="ya-link">Sign In</a></li>
+            -->
+            </ul>
+        </div>
+        <!--container -->
+    </div>
+    <!--ya-account-bar -->
+
+
+    <!--main start -->
+    <div class="container">
+        <div class="container-fluid ya-main-content ya-teacher-profile">
+            <div class="ya-content">
+
+                <div class="row-fluid ">
+                    <div class="span3 ya-left-column">
+
+                        <div class="ya-left-menu" style="height: 375px;">
+                            <!-- this is temporary height remove it when you will add menu control in this panel-->
+                            <!--LEFT MENU WILL GO HERE-->
+                        </div>
+                        <div class="ya-white-panel">
+
+                            <div class="ya-box ya-my-profile-pic">
+                                <h3 class="ya-title">My Profile Pic</h3>
+                                <div class="ya-editable-panel">
+                                    <div class="ya-profile-image">
+                                        <img src="images/dummy.png" class="span8" />
+                                    </div>
+                                    <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-my-profile-pic">
+                                        <span
+                                            class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                </div>
+                                <div class="ya-additional-panel collapse" id="id-edit-my-profile-pic">
+                                    <div class="ya-additional-panel-wrraper ya-edit-my-profile-pic">
+                                        <h2 class="ya-title">Edit Profile Image</h2>
+                                        <p>Click below to select a JPG, GIF or PNG format photo from your computer and then click 'Upload Image'</p>
+                                        <button type="button" class="btn btn-block">
+                                            <span data-icon="}" aria-hidden="true"></span>
+                                            Browse for file...                                   
+                                        </button>
+                                        <p>Selected File: <strong>No file selected</strong></p>
+                                        <button type="button" class="btn btn-block"><span data-icon="B" aria-hidden="true"></span>Upload File</button>
+                                        <button type="button" class="btn btn-block">Use Default Image</button>
+                                        <button type="button" class="btn btn-block">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ya-box ya-yoga-taught">
+                                <h3 class="ya-title">I Teach</h3>
+                                <div class="ya-editable-panel">
+                                    <div class="ya-editable-content">
+                                        <ul>
+                                            <li>Flow Yoga</li>
+                                            <li>Hot Yoga</li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-teach">
+                                        <span
+                                            class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                </div>
+                                <div class="ya-additional-panel collapse" id="id-edit-teach">
+                                    <div class="ya-additional-panel-wrraper ya-edit-teach">
+                                        <h2 class="ya-title">I Teach</h2>
+                                        <ul>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" value="">
+                                                    Flowing                                         
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" value="">
+                                                    Hot/Heated
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" value="">
+                                                    Alignment-oriented
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" value="">
+                                                    Fitness-oriented
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label class="checkbox">
+                                                    <input type="checkbox" value="">
+                                                    Speciality
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <div class="ya-button-row">
+                                            <button type="button" class="btn">Save</button>
+                                            <button type="button" class="btn">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ya-box ya-languages">
+                                <h3 class="ya-title">Languages</h3>
+                                <div class="ya-editable-panel">
+                                    <div class="ya-editable-content">
+                                        <ul>
+                                            <li>English</li>
+                                            <li>Mandarin</li>
+                                        </ul>
+                                    </div>
+                                    <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-languages">
+                                        <span
+                                            class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                </div>
+                                <div class="ya-additional-panel collapse" id="id-edit-languages">
+                                    <div class="ya-additional-panel-wrraper ya-edit-languages">
+                                        <h2 class="ya-title">Edit Languages</h2>
+                                        <textarea rows="2" class="span12"></textarea>
+                                        <div class="ya-button-row">
+                                            <button type="button" class="btn">Save</button>
+                                            <button type="button" class="btn">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ya-box ya-photo-gallery">
+                                <h3 class="ya-page-title-medium">Photo Gallery <small>(23)</small>
+                                </h3>
+                                <div class="ya-gallery">
+                                    <a href="#" class="ya-thumbnail">
+                                        <img src="images/photo-gallery-1.png" alt="Yoga-Gallery" class="span12"></a>
+                                    <a href="#" class="ya-thumbnail">
+                                        <img src="images/photo-gallery-1.png" alt="Yoga-Gallery" class="span12"></a>
+                                    <a href="#" class="ya-thumbnail">
+                                        <img src="images/photo-gallery-1.png" alt="Yoga-Gallery" class="span12"></a>
+                                    <a href="#" class="ya-thumbnail">
+                                        <img src="images/photo-gallery-1.png" alt="Yoga-Gallery" class="span12"></a>
+                                </div>
+                                <div class="row-fluid ya-button-row">
+                                    <button class="btn"><span class="ya-gallery-icon" aria-hidden="true" data-icon="%"></span>My Photo Gallery</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- end span3 -->
+                    <div class="span9 ya-middle-column">
+                        <div class="row-fluid">
+                            <div class="span8 ya-column-center">
+                                <h1 class="ya-page-title ya-edit-profile">Edit Profile</h1>
+                                <div class="ya-two-column-section">
+                                    <div class="ya-column-1">
+                                        <div class="ya-logo-container">
+                                            <div class="ya-logo-watermark">
+                                                <div class="ya-editable-panel">
+                                                    <div class="ya-school-logo">
+                                                        <img src="images/profile-pic.png" alt="" />
+                                                    </div>
+                                                    <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-logo">
+                                                        <span
+                                                            class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ya-additional-panel collapse" id="id-edit-logo">
+                                            <div class="ya-additional-panel-wrraper ya-edit-my-profile-pic">
+                                                <h3 class="ya-title">Edit Profile Image</h3>
+                                                <p>Click below to select a JPG, GIF or PNG format photo from your computer and then click 'Upload Image'</p>
+                                                <button type="button" class="btn btn-block">
+                                                    <span data-icon="}" aria-hidden="true"></span>
+                                                    Browse for file...                                   
+                                                </button>
+                                                <p>Selected File: <strong>No file selected</strong></p>
+                                                <button type="button" class="btn btn-block"><span data-icon="B" aria-hidden="true"></span>Upload File</button>
+                                                <button type="button" class="btn btn-block">Use Default Image</button>
+                                                <button type="button" class="btn btn-block">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="ya-column-2">
+                                        <div class="ya-personal-details ya-editable-panel">
+                                            <h4 class="ya-name">Jane Peterson</h4>
+                                            <div class="row-fluid">
+                                                <span class="ya-label">Spiritual Name</span>
+                                                <span class="ya-value">Yogi</span>
+                                            </div>
+                                            <div class="row-fluid">
+                                                <span class="ya-label">My Registry ID</span>
+                                                <span class="ya-value">2558888</span>
+                                            </div>
+                                            <div class="row-fluid"><span class="ya-value">janepeterson@gmail.com</span></div>
+                                            <address class="ya-address">
+                                                1582 West 23rd Street<br />
+                                                Vancouver, BC 89907<br />
+                                                Canada<br />
+                                                912-334-2234
+                                            </address>
+                                            <div class="ya-social-icons">
+                                                <span class="fs1" aria-hidden="true" data-icon="7"></span>
+                                                <span class="fs1" aria-hidden="true" data-icon="|"></span>
+                                                <span class="fs1" aria-hidden="true" data-icon="8"></span>
+                                            </div>
+                                            <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-personal-details"><span class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                        </div>
+                                        <div class="ya-additional-panel collapse" id="id-personal-details">
+                                            <div class="ya-additional-panel-wrraper ya-edit-personal-details">
+                                                <h3 class="ya-title">Edit Personal Details</h3>
+                                                <div class="control-group">
+                                                    <label>First Name<span class="ya-astrix">*</span></label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Last Name<span class="ya-astrix">*</span></label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Spiritual Name</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Email<span class="ya-astrix">*</span></label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>New Password</label>
+                                                    <input type="password" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Confirm New Password</label>
+                                                    <input type="password" placeholder="" class="span12">
+                                                </div>
+                                                <h3 class="ya-title">Registry Address</h3>
+                                                <p>This address will appear in the Registry depending on your privacy settings</p>
+                                                <div class="control-group">
+                                                    <label>Country</label>
+                                                    <select class="span12">
+                                                        <option>Select Country</option>
+                                                    </select>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Address 1</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Address 2</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>City</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>State</label>
+                                                    <select class="span12">
+                                                        <option>Select State</option>
+                                                    </select>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Phone</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Twitter Name<span class="help-inline">eg. @YogaAlliance</span></label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Facebook Link<span data-icon="T" aria-hidden="true" class="ya-help-icon"></span></label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Pinterest Name<span data-icon="T" aria-hidden="true" class="ya-help-icon"></span></label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="ya-button-row">
+                                                    <button class="btn" type="button">Save</button>
+                                                    <button class="btn" type="button">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- This Block is repeated and this is for mobile only-->
+                                <div class="ya-column-center-box">
+                                    <div class="ya-logo-box-tablet">
+                                        <img src="images/S04-YA-SCHOOL-RCYS.png">
+                                        <img src="images/S04-YA-SCHOOL-RYS-200.png">
+                                        <img src="images/S04-YA-SCHOOL-RCYS.png">
+                                        <img src="images/S04-YA-SCHOOL-RYS-200.png">
+                                        <span>Since January 2012</span>
+                                        <!-- <span class="ya-value">680</span>
+                                        <span class="ya-label">Teaching Hours</span>-->
+                                    </div>
+                                </div>
+                                <div class="ya-column-center-box ya-profile-publish">
+                                    <div class="ya-control-box">
+                                        <div class="row-fluid">
+                                            <h4>Your profile is:</h4>
+                                            <h3>Unpublished</h3>
+                                        </div>
+                                        <div class="row-fluid">
+                                            <button class="btn btn-success ya-publish-now" type="button">Publish Now</button>
+                                            <button class="btn" type="button">View Public Profile</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ya-column-center-box ya-privacy-settings">
+                                    <div class="alert alert-info ya-alert-info">
+                                        <span data-icon="Y" aria-hidden="true"></span>This is not your public profile. Control which items show on your public profile by setting your privacy settings                                                   
+                                        <!--
+                                        <button class="btn btn-block ya-privacy-btn" data-toggle="collapse" data-target="#id-privacy-settings">Privacy Settings</button>-->
+                                        <a href="#privacyModal" role="button" class="btn btn-block ya-privacy-btn" data-toggle="modal">Privacy Settings</a>
+                                    </div>
+                                </div>
+                                <div class="ya-column-center-box ya-my-profile-pic">
+                                    <h1 class="ya-page-title">My Profile Pic</h1>
+                                    <div class="ya-editable-panel">
+                                        <div class="ya-profile-image">
+                                            <img src="images/dummy.png" />
+                                        </div>
+                                        <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-my-profile-pic-mobile">
+                                            <span
+                                                class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                    </div>
+                                    <div class="ya-additional-panel collapse" id="id-edit-my-profile-pic-mobile">
+                                        <div class="ya-additional-panel-wrraper ya-edit-my-profile-pic">
+                                            <h2 class="ya-title">Edit Profile Image</h2>
+                                            <p>Click below to select a JPG, GIF or PNG format photo from your computer and then click 'Upload Image'</p>
+                                            <button type="button" class="btn btn-block">
+                                                <span data-icon="}" aria-hidden="true"></span>
+                                                Browse for file...                                   
+                                            </button>
+                                            <p>Selected File: <strong>No file selected</strong></p>
+                                            <button type="button" class="btn btn-block"><span data-icon="B" aria-hidden="true"></span>Upload File</button>
+                                            <button type="button" class="btn btn-block">Use Default Image</button>
+                                            <button type="button" class="btn btn-block">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ya-column-center-box ya-yoga-taught">
+                                    <h1 class="ya-page-title">I Teach</h1>
+                                    <div class="ya-editable-panel">
+                                        <div class="ya-editable-content">
+                                            <ul>
+                                                <li>Flow Yoga</li>
+                                                <li>Hot Yoga</li>
+                                            </ul>
+                                        </div>
+                                        <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-teach-mobile">
+                                            <span
+                                                class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                    </div>
+                                    <div class="ya-additional-panel collapse" id="id-edit-teach-mobile">
+                                        <div class="ya-additional-panel-wrraper ya-edit-teach">
+                                            <h2 class="ya-title">I Teach</h2>
+                                            <ul>
+                                                <li>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="">
+                                                        Flowing                                         
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="">
+                                                        Hot/Heated
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="">
+                                                        Alignment-oriented
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="">
+                                                        Fitness-oriented
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label class="checkbox">
+                                                        <input type="checkbox" value="">
+                                                        Speciality
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                            <div class="ya-button-row">
+                                                <button type="button" class="btn">Save</button>
+                                                <button type="button" class="btn">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ya-column-center-box ya-languages">
+                                    <h1 class="ya-page-title">Languages</h1>
+                                    <div class="ya-editable-panel">
+                                        <div class="ya-editable-content">
+                                            <ul>
+                                                <li>English</li>
+                                                <li>Mandarin</li>
+                                            </ul>
+                                        </div>
+                                        <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-languages-mobile">
+                                            <span
+                                                class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                    </div>
+                                    <div class="ya-additional-panel collapse" id="id-edit-languages-mobile">
+                                        <div class="ya-additional-panel-wrraper ya-edit-languages">
+                                            <h2 class="ya-title">Edit Languages</h2>
+                                            <textarea rows="2" class="span12"></textarea>
+                                            <div class="ya-button-row">
+                                                <button type="button" class="btn">Save</button>
+                                                <button type="button" class="btn">Cancel</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Block Mobile -->
+
+                                <div class="ya-about-container">
+                                    <div class="ya-column-center-box ya-about">
+                                        <h1 class="ya-page-title">My Bio</h1>
+
+                                        <div class="ya-editable-panel">
+                                            <div class="ya-editable-content">
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et tempus felis.
+                                    Sed aliquet purus ac commodo cursus. Vivamus et diam quis nisi malesuada tristique
+                                    eget sit amet purus. Sed ac congue dolor. Vestibulum commodo nisl id turpis condimentum
+                                    viverra. Morbi eget nulla eget urna ornare rhoncus. Curabitur metus diam, pulvinar
+                                    eu dolor eu, ornare consectetur mi. Ut porta magna augue, at interdum quam egestas
+                                    ut. Donec aliquet, odio faucibus accumsan mollis, leo risus pulvinar nunc, non hendrerit
+                                    felis velit luctus sem. Morbi at mi id ipsum viverra iaculis.                                   
+                                                </p>
+                                            </div>
+                                            <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-my-bio">
+                                                <span
+                                                    class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                        </div>
+                                        <div class="ya-additional-panel collapse" id="id-edit-my-bio">
+                                            <div class="ya-additional-panel-wrraper ya-edit-my-bio">
+                                                <h3 class="ya-title">Edit My Bio<span class="ya-help-icon" aria-hidden="true" data-icon="T"></span></h3>
+                                                <p>Click the help symbol for suggestions</p>
+                                                <!--    rich text control will go here -->
+                                                <div class="ya-button-row">
+                                                    <button class="btn">Save</button>
+                                                    <button class="btn">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="ya-column-center-box ya-teaching-experience">
+                                    <h1 class="ya-page-title">Teaching Experience</h1>
+                                    <div class="ya-teacher-experience-block">
+                                        <div class="ya-editable-panel">
+                                            <button class="btn btn-link ya-delete-button">Delete</button>
+                                            <div class="row-fluid ya-row ">
+                                                <div class="span3">
+                                                    <span class="badge ya-badge">Current</span>
+                                                </div>
+                                                <div class="span9">
+                                                    <article>
+                                                        <h4>Sunstone Yoga School or Yoga</h4>
+                                                        <em>Aug, 2010 - Current</em>
+                                                        <div class="ya-address">
+                                                            1290 10th Street West<br />
+                                                            New York, NY 90026<br />
+                                                            United States<br />
+                                                            (902) 582-1743<br />
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-teaching-experience-current"><span class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                        </div>
+                                        <div class="ya-additional-panel collapse" id="id-teaching-experience-current">
+                                            <div class="ya-additional-panel-wrraper ya-teaching-experience-previous">
+                                                <h3 class="ya-title">Edit Teaching Experience</h3>
+                                                <div class="control-group">
+                                                    <label>Location/Studio Name<span class="ya-astrix">*</span></label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="ya-two-column-row">
+                                                    <div class="ya-column-1">
+                                                        <div class="control-group">
+                                                            <label>Start Date<span class="ya-astrix">*</span></label>
+                                                            <input type="text" placeholder="" class="ya-datepicker span9">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ya-column-2">
+                                                        <div class="control-group">
+                                                            <label>End Date<span class="ya-astrix">*</span></label>
+                                                            <input type="text" placeholder="" class="ya-datepicker span9">
+                                                            <span class="help-block">Leave End Date empty if you are currently teaching here</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Country<span class="ya-astrix">*</span></label>
+                                                    <select class="span12">
+                                                        <option>Select Country</option>
+                                                    </select>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Address 1</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Address 2</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="ya-two-column-row">
+                                                    <div class="ya-column-1">
+
+                                                        <div class="control-group">
+                                                            <label>City</label>
+                                                            <input type="text" placeholder="" class="span12">
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label>Zip Code</label>
+                                                            <input type="text" placeholder="" class="span12">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ya-column-2">
+
+
+                                                        <div class="control-group">
+                                                            <label>State</label>
+                                                            <select class="span12">
+                                                                <option>Select State</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label>Phone</label>
+                                                            <input type="text" placeholder="" class="span12">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Website</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="ya-button-row">
+                                                    <button class="btn">Save</button>
+                                                    <button class="btn">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="row-fluid ya-row hide" id="prev-experience">
+                                            <!-- REPEATING REGION -->
+                                            <div class="ya-editable-panel">
+                                                <button class="btn btn-link ya-delete-button">Delete</button>
+                                                <div class="row-fluid">
+                                                    <div class="span3">
+                                                        <span class="badge ya-badge">Previous</span>
+                                                    </div>
+                                                    <div class="span9">
+                                                        <article>
+                                                            <h4>West Side School of Yoga</h4>
+                                                            <em>Aug, 2010 - Dec, 2010</em>
+                                                            <p class="ya-address">
+                                                                1290 10th Street West<br />
+                                                                New York, NY 90026<br />
+                                                                United States<br />
+                                                                (902) 582-1743<br />
+                                                            </p>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-teaching-experience-previous-1"><span class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                            </div>
+                                            <div class="ya-additional-panel collapse" id="id-teaching-experience-previous-1">
+                                                <div class="ya-additional-panel-wrraper ya-teaching-experience-previous">
+                                                    <h3 class="ya-title">Edit Teaching Experience</h3>
+                                                    <div class="control-group">
+                                                        <label>Location/Studio Name<span class="ya-astrix">*</span></label>
+                                                        <input type="text" placeholder="" class="span12">
+                                                    </div>
+                                                    <div class="ya-two-column-row">
+                                                        <div class="ya-column-1">
+                                                            <div class="control-group">
+                                                                <label>Start Date<span class="ya-astrix">*</span></label>
+                                                                <input type="text" placeholder="" class="ya-datepicker span9">
+                                                            </div>
+                                                        </div>
+                                                        <div class="ya-column-2">
+                                                            <div class="control-group">
+                                                                <label>End Date<span class="ya-astrix">*</span></label>
+                                                                <input type="text" placeholder="" class="ya-datepicker span9">
+                                                                <span class="help-block">Leave End Date empty if you are currently teaching here</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label>Country<span class="ya-astrix">*</span></label>
+                                                        <select class="span12">
+                                                            <option>Select Country</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label>Address 1</label>
+                                                        <input type="text" placeholder="" class="span12">
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label>Address 2</label>
+                                                        <input type="text" placeholder="" class="span12">
+                                                    </div>
+                                                    <div class="ya-two-column-row">
+                                                        <div class="ya-column-1">
+
+                                                            <div class="control-group">
+                                                                <label>City</label>
+                                                                <input type="text" placeholder="" class="span12">
+                                                            </div>
+                                                            <div class="control-group">
+                                                                <label>Zip Code</label>
+                                                                <input type="text" placeholder="" class="span12">
+                                                            </div>
+                                                        </div>
+                                                        <div class="ya-column-2">
+
+
+                                                            <div class="control-group">
+                                                                <label>State</label>
+                                                                <select class="span12">
+                                                                    <option>Select State</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="control-group">
+                                                                <label>Phone</label>
+                                                                <input type="text" placeholder="" class="span12">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label>Website</label>
+                                                        <input type="text" placeholder="" class="span12">
+                                                    </div>
+                                                    <div class="ya-button-row">
+                                                        <button class="btn">Save</button>
+                                                        <button class="btn">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ya-editable-panel">
+                                                <button class="btn btn-link ya-delete-button">Delete</button>
+                                                <div class="row-fluid">
+                                                    <div class="span3">
+                                                        <span class="badge ya-badge">Previous</span>
+                                                    </div>
+                                                    <div class="span9">
+                                                        <article>
+                                                            <h4>West Side School of Yoga</h4>
+                                                            <em>Aug, 2010 - Dec, 2010</em>
+                                                            <p class="ya-address">
+                                                                1290 10th Street West<br />
+                                                                New York, NY 90026<br />
+                                                                United States<br />
+                                                                (902) 582-1743<br />
+                                                            </p>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-teaching-experience-previous-2"><span class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                            </div>
+                                            <div class="ya-additional-panel collapse" id="id-teaching-experience-previous-2">
+                                                <div class="ya-additional-panel-wrraper ya-teaching-experience-previous">
+                                                    <h3 class="ya-title">Edit Teaching Experience</h3>
+                                                    <div class="control-group">
+                                                        <label>Location/Studio Name<span class="ya-astrix">*</span></label>
+                                                        <input type="text" placeholder="" class="span12">
+                                                    </div>
+                                                    <div class="ya-two-column-row">
+                                                        <div class="ya-column-1">
+                                                            <div class="control-group">
+                                                                <label>Start Date<span class="ya-astrix">*</span></label>
+                                                                <input type="text" placeholder="" class="ya-datepicker span9">
+                                                            </div>
+                                                        </div>
+                                                        <div class="ya-column-2">
+                                                            <div class="control-group">
+                                                                <label>End Date<span class="ya-astrix">*</span></label>
+                                                                <input type="text" placeholder="" class="ya-datepicker span9">
+                                                                <span class="help-block">Leave End Date empty if you are currently teaching here</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label>Country<span class="ya-astrix">*</span></label>
+                                                        <select class="span12">
+                                                            <option>Select Country</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label>Address 1</label>
+                                                        <input type="text" placeholder="" class="span12">
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label>Address 2</label>
+                                                        <input type="text" placeholder="" class="span12">
+                                                    </div>
+                                                    <div class="ya-two-column-row">
+                                                        <div class="ya-column-1">
+
+                                                            <div class="control-group">
+                                                                <label>City</label>
+                                                                <input type="text" placeholder="" class="span12">
+                                                            </div>
+                                                            <div class="control-group">
+                                                                <label>Zip Code</label>
+                                                                <input type="text" placeholder="" class="span12">
+                                                            </div>
+                                                        </div>
+                                                        <div class="ya-column-2">
+
+
+                                                            <div class="control-group">
+                                                                <label>State</label>
+                                                                <select class="span12">
+                                                                    <option>Select State</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="control-group">
+                                                                <label>Phone</label>
+                                                                <input type="text" placeholder="" class="span12">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label>Website</label>
+                                                        <input type="text" placeholder="" class="span12">
+                                                    </div>
+                                                    <div class="ya-button-row">
+                                                        <button class="btn">Save</button>
+                                                        <button class="btn">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END REPEATING REGION -->
+                                        <div class="row-fluid">
+                                            <div class="span3">
+                                                <span class="badge ya-badge prev-badge">Previous</span>
+                                            </div>
+                                            <div class="span6">
+                                                <a class="up-down-link ya-badge prev-exp" href="#">Show Previous Experience<i class="icon-arrow-down"></i>
+                                                </a>
+                                            </div>
+                                            <div class="span3">
+                                                <a class="ya-action" href="#">Add Teaching Experience</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="ya-column-center-box ya-shipping-address">
+                                    <h1 class="ya-page-title">Mailing Address<small>(never published)</small></h1>
+                                    <div class="ya-shipping-address-block">
+                                        <div class="ya-editable-panel">
+                                            <div class="row-fluid">
+                                                <div class="span12">
+                                                    <article>
+                                                        <h4>Sunstone Yoga School of Yoga</h4>
+                                                        <p class="ya-address">
+                                                            1582 West 23rd Street<br />
+                                                            Vancouver, BC 89907<br />
+                                                            Canada<br />
+                                                            912-334-2234
+                                                        </p>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-shipping-address"><span class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                        </div>
+                                        <div class="ya-additional-panel collapse" id="id-edit-shipping-address">
+                                            <div class="ya-additional-panel-wrraper ya-edit-shipping-address">
+                                                <h3 class="ya-title">Edit Mailing Address</h3>
+                                                <div class="control-group">
+                                                    <label>Country</label>
+                                                    <select class="span12">
+                                                        <option>Select Country</option>
+                                                    </select>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Address 1</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Address 2</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="ya-two-column-row">
+                                                    <div class="ya-column-1">
+                                                        <div class="control-group">
+                                                            <label>City</label>
+                                                            <input type="text" placeholder="" class="span12">
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label>Zip Code</label>
+                                                            <input type="text" placeholder="" class="span12">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ya-column-2">
+                                                        <div class="control-group">
+                                                            <label>State</label>
+                                                            <select class="span12">
+                                                                <option>Select State</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ya-button-row">
+                                                    <button class="btn">Save</button>
+                                                    <button class="btn">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ya-column-center-box ya-billing-address">
+                                    <h1 class="ya-page-title">Billing Address<small>(never published)</small></h1>
+                                    <div class="ya-billing-address-block">
+                                        <div class="ya-editable-panel">
+                                            <div class="row-fluid">
+
+                                                <div class="span12">
+                                                    <article>
+                                                        <h4>Sunstone Yoga School of Yoga</h4>
+                                                        <p class="ya-address">
+                                                            1582 West 23rd Street<br />
+                                                            Vancouver, BC 89907<br />
+                                                            Canada<br />
+                                                            912-334-2234
+                                                        </p>
+                                                    </article>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-warning ya-edit-button" data-toggle="collapse" data-target="#id-edit-mailing-address"><span class="ya-edit-icon" aria-hidden="true" data-icon=")"></span>Edit</button>
+                                        </div>
+                                        <div class="ya-additional-panel collapse" id="id-edit-mailing-address">
+                                            <div class="ya-additional-panel-wrraper ya-edit-mailing-address">
+                                                <h3 class="ya-title">Edit Billing Address</h3>
+                                                <div class="control-group">
+                                                    <label class="checkbox">
+                                                        <input type="checkbox">
+                                                        Same as Mailing
+                                                    </label>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Country</label>
+                                                    <select class="span12">
+                                                        <option>Select Country</option>
+                                                    </select>
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Address 1</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="control-group">
+                                                    <label>Address 2</label>
+                                                    <input type="text" placeholder="" class="span12">
+                                                </div>
+                                                <div class="ya-two-column-row">
+                                                    <div class="ya-column-1">
+                                                        <div class="control-group">
+                                                            <label>City</label>
+                                                            <input type="text" placeholder="" class="span12">
+                                                        </div>
+                                                        <div class="control-group">
+                                                            <label>Zip Code</label>
+                                                            <input type="text" placeholder="" class="span12">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ya-column-2">
+                                                        <div class="control-group">
+                                                            <label>State</label>
+                                                            <select class="span12">
+                                                                <option>Select State</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="ya-button-row">
+                                                    <button class="btn">Save</button>
+                                                    <button class="btn">Cancel</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- This Block is repeated and this is for mobile only-->
+                                <div class="ya-column-center-box ya-photo-gallery">
+                                    <h1 class="ya-page-title">Photo Gallery <small>(23)</small>
+                                    </h1>
+                                    <div class="ya-gallery">
+                                        <a href="#" class="ya-thumbnail">
+                                            <img src="images/photo-gallery-1.png" alt="Yoga-Gallery" class="span12"></a>
+                                        <a href="#" class="ya-thumbnail">
+                                            <img src="images/photo-gallery-1.png" alt="Yoga-Gallery" class="span12"></a>
+                                        <a href="#" class="ya-thumbnail">
+                                            <img src="images/photo-gallery-1.png" alt="Yoga-Gallery" class="span12"></a>
+                                        <a href="#" class="ya-thumbnail">
+                                            <img src="images/photo-gallery-1.png" alt="Yoga-Gallery" class="span12"></a>
+                                    </div>
+                                    <div class="row-fluid ya-button-row">
+                                        <button class="btn"><span class="ya-gallery-icon" aria-hidden="true" data-icon="%"></span>My Photo Gallery</button>
+                                    </div>
+                                </div>
+                                <!-- End of Block Mobile -->
+
+                            </div>
+                            <!-- end span9 -->
+                            <div class="span4 ya-right-column">
+                                <div class="ya-right-box ya-logo-box-container">
+                                    <div class="ya-logo-box">
+                                        <img src="images/S04-YA-SCHOOL-RCYS.png">
+                                        <img src="images/S04-YA-SCHOOL-RYS-200.png">
+                                        <img src="images/S04-YA-SCHOOL-RCYS.png">
+                                        <img src="images/S04-YA-SCHOOL-RYS-200.png">
+                                        <span>Since January 2012</span>
+                                        <!-- <span class="ya-value">680</span>
+                                        <span class="ya-label">Teaching Hours</span>-->
+                                    </div>
+                                </div>
+                                <div class="ya-right-box ya-profile-publish">
+                                    <div class="ya-control-box">
+                                        <div class="row-fluid">
+                                            <h4>Your profile is:</h4>
+                                            <h3>Unpublished</h3>
+                                        </div>
+                                        <div class="row-fluid">
+                                            <button class="btn btn-success ya-publish-now" type="button">Publish Now</button>
+                                            <button class="btn" type="button">View Public Profile</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ya-right-box ya-privacy-settings">
+                                    <div class="alert alert-info ya-alert-info">
+                                        <span data-icon="Y" aria-hidden="true"></span>This is not your public profile. Control which items show on your public profile by setting your privacy settings                                                   
+                                        <!--
+                                        <button class="btn btn-block ya-privacy-btn" data-toggle="collapse" data-target="#id-privacy-settings">Privacy Settings</button>-->
+                                        <a href="#privacyModal" role="button" class="btn btn-block ya-privacy-btn" data-toggle="modal">Privacy Settings</a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <!-- end span3 -->
+                    </div>
+                </div>
+                <!-- end span6 -->
+            </div>
+        </div>
+    </div>
+    <!--End Container -->
+    <!--main end -->
+
+
+    <!--footer start -->
+    <footer class="ya-footer-wrap">
+        <div class="ya-footer-top">
+            <div class="container ">
+                <!--Put FooterLogo -->
+                <!--<img src="images/footer_logo.png" alt=""> -->
+
+            </div>
+        </div>
+        <ul class="ya-footer-bottom inline">
+            <!--Putt CopyRight Here -->
+            <!--
+        <li>Copyright 2013 by Yoga Alliance</li>
+        <li class="divider">|</li>
+        <li>1701 Clarendon Boulevard, Suite 110</li>
+        <li class="divider">|</li>
+        <li>Arlington, VA 22209</li>
+        <li class="divider">|</li>
+        <li>1-888-921-YOGA (9642)</li>
+        <li>Yoga Alliance, YA, RYS, RCYS, RPYS, RYT, E-RYT, RCYT, and RPYT are registered trademarks of 
+        Yoga Alliance. All rights reserved.</li> -->
+        </ul>
+    </footer>
+    <!--footer end -->
+</body>
+<!-- Privacy Modal -->
+<div id="privacyModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Privacy Settings</h3>
+    </div>
+    <div class="modal-body">
+
+        <div class="ya-additional-panel" id="id-privacy-settings">
+            <div class="ya-additional-panel-wrraper ya-privacy-settings-panel">
+                <h3 class="ya-title">Privacy Settings</h3>
+                <div class="row-fluid ya-information">
+                    <p>Privacy Settings crontrol what shows up on your Public Profile</p>
+                    <strong>Public</strong>
+                    <p>Selecting a field as public will allow anyone on the site to see the information if your profile is published.</p>
+                    <strong>Members Only</strong>
+                    <p>Selecting a field as members only will allow active RYTs and RYSs that are signed into the site to see that information if your profile is published.</p>
+                    <strong>Private</strong>
+                    <p>Selecting a field as private will keep that information private between you and Yoga Alliance and will not be displayed on your profile.</p>
+                </div>
+                <div class="row-fluid ya-options-row">
+                    <strong>Set all to: </strong>
+                    <button class="btn">Public</button>
+                    <button class="btn">Members Only</button>
+                    <button class="btn ">Private</button>
+                </div>
+
+                <div class="ya-block">
+                    <table class="row-fluid">
+                        <tbody>
+                            <tr>
+                                <td colspan="4">
+                                    <h4>Contact Information</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Public</th>
+                                <th>Members</th>
+                                <th>Private</th>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>First Name</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="firstnameoptions" id="Radio1">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="firstnameoptions" id="Radio2">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="firstnameoptions" id="Radio3" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Last Name</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="lastnameoptions" id="Radio4">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="lastnameoptions" id="Radio5">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="lastnameoptions" id="Radio6" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Spiritual Name</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="spiritualnameoptions" id="Radio7">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="spiritualnameoptions" id="Radio8">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="spiritualnameoptions" id="Radio9" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="emailoptions" id="Radio10">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="emailoptions" id="Radio11">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="emailoptions" id="Radio12" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="phoneoptions" id="Radio13">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="phoneoptions" id="Radio14">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="phoneoptions" id="Radio15" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="4">
+                                    <h4>Registry Address</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Public</th>
+                                <th>Members</th>
+                                <th>Private</th>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Address 1</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="address1options" id="Radio16">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="address1options" id="Radio17">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="address1options" id="Radio18" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Address 2</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="address2options" id="Radio19">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="address2options" id="Radio20">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="address2options" id="Radio21" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>City</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="cityoptions" id="Radio22">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="cityoptions" id="Radio23">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="cityoptions" id="Radio24" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="countryoptions" id="Radio25">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="countryoptions" id="Radio26">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="countryoptions" id="Radio27" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>State</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="stateoptions" id="Radio28">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="stateoptions" id="Radio29">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="stateoptions" id="Radio30" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Zip Code</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="zipcodeoptions" id="Radio31">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="zipcodeoptions" id="Radio32">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="zipcodeoptions" id="Radio33" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td colspan="4">
+                                    <h4>Professional Information</h4>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th></th>
+                                <th>Public</th>
+                                <th>Members</th>
+                                <th>Private</th>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <td>Teaching Experience</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="teachingexperienceoptions" id="Radio34">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="teachingexperienceoptions" id="Radio35">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="teachingexperienceoptions" id="Radio36" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Teaching Hours</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="teachinghoursoptions" id="Radio37">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="teachinghoursoptions" id="Radio38">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="teachinghoursoptions" id="Radio39" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Yoga Styles</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="yogastylesoptions" id="Radio40">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="yogastylesoptions" id="Radio41">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="yogastylesoptions" id="Radio42" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Languages</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="languagesoptions" id="Radio43">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="languagesoptions" id="Radio44">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="languagesoptions" id="Radio45" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>My Bio</td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="mybiooptions" id="Radio46">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="mybiooptions" id="Radio47">
+                                    </label>
+                                </td>
+                                <td>
+                                    <label class="radio">
+                                        <input type="radio" name="mybiooptions" id="Radio48" checked>
+                                    </label>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--<div class="row-fluid ya-button-row">
+                    <button class="btn">Save</button>
+                    <button class="btn">Cancel</button>
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button class="btn btn-primary">Save</button>
+    </div>
+</div>
+</html>

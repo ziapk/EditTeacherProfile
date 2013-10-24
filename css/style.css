@@ -1,0 +1,669 @@
+@font-face {
+  font-family: 'YogaAlliance';
+  src: url("../fonts/YogaAlliance.eot");
+  src: url("../fonts/YogaAlliance.eot?#iefix") format("embedded-opentype"), url("../fonts/YogaAlliance.woff") format("woff"), url("../fonts/YogaAlliance.ttf") format("truetype"), url("../fonts/YogaAlliance.svg#YogaAlliance") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-RegularIt';
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_0_0.eot");
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_0_0.eot?#iefix") format("embedded-opentype"), url("http://positivefutures.com/ya/web-font/27BA9B_0_0.woff") format("woff"), url("http://positivefutures.com/ya/web-font/27BA9B_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_1_0.eot");
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_1_0.eot?#iefix") format("embedded-opentype"), url("http://positivefutures.com/ya/web-font/27BA9B_1_0.woff") format("woff"), url("http://positivefutures.com/ya/web-font/27BA9B_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_2_0.eot");
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_2_0.eot?#iefix") format("embedded-opentype"), url("http://positivefutures.com/ya/web-font/27BA9B_2_0.woff") format("woff"), url("http://positivefutures.com/ya/web-font/27BA9B_2_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_3_0.eot");
+  src: url("http://positivefutures.com/ya/web-font/27BA9B_3_0.eot?#iefix") format("embedded-opentype"), url("http://positivefutures.com/ya/web-font/27BA9B_3_0.woff") format("woff"), url("http://positivefutures.com/ya/web-font/27BA9B_3_0.ttf") format("truetype");
+}
+
+/* line 24, ../sass/style.scss */
+[data-icon]:before {
+  font-family: 'YogaAlliance';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 35, ../sass/style.scss */
+.icon-certificate, .icon-leaf, .icon-home, .icon-home-2, .icon-pencil, .icon-stack, .icon-coin, .icon-support, .icon-clock, .icon-envelop, .icon-mail-send, .icon-calendar, .icon-user, .icon-bubbles, .icon-busy, .icon-vcard, .icon-cog, .icon-cog-2, .icon-bars, .icon-stats, .icon-dashboard, .icon-briefcase, .icon-resize, .icon-enter, .icon-exit, .icon-arrow-up, .icon-arrow-right, .icon-arrow-down, .icon-arrow-left, .icon-checkbox, .icon-checkbox-unchecked, .icon-radio-checked, .icon-radio-unchecked, .icon-thumbs-up, .icon-star, .icon-star-2, .icon-star-3, .icon-plus, .icon-checkmark, .icon-warning, .icon-warning-2, .icon-question, .icon-question-2, .icon-plus-circle, .icon-plus-circle-2, .icon-minus-circle, .icon-minus-circle-2, .icon-info, .icon-info-2, .icon-cancel-circle, .icon-cancel-circle-2, .icon-checkmark-circle, .icon-checkmark-circle-2, .icon-file-pdf, .icon-newspaper, .icon-pencil-2, .icon-star-4, .icon-search, .icon-double-angle-left, .icon-double-angle-right, .icon-print, .icon-opennewwindow, .icon-filter, .icon-remove, .icon-disk, .icon-undo, .icon-redo, .icon-eye, .icon-eye-blocked, .icon-facebook, .icon-pinterest, .icon-twitter-old, .icon-folder-open, .icon-calendar-2, .icon-arrow-right-2, .icon-arrow-left-2, .icon-image, .icon-images, .icon-instagram, .icon-google-plus, .icon-scale-up, .icon-scale-down {
+  font-family: 'YogaAlliance';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 44, ../sass/style.scss */
+.icon-certificate:hover, .icon-leaf:hover, .icon-home:hover, .icon-home-2:hover, .icon-pencil:hover, .icon-stack:hover, .icon-coin:hover, .icon-support:hover, .icon-clock:hover, .icon-envelop:hover, .icon-mail-send:hover, .icon-calendar:hover, .icon-user:hover, .icon-bubbles:hover, .icon-busy:hover, .icon-vcard:hover, .icon-cog:hover, .icon-cog-2:hover, .icon-bars:hover, .icon-stats:hover, .icon-dashboard:hover, .icon-briefcase:hover, .icon-resize:hover, .icon-enter:hover, .icon-exit:hover, .icon-arrow-up:hover, .icon-arrow-right:hover, .icon-arrow-down:hover, .icon-arrow-left:hover, .icon-checkbox:hover, .icon-checkbox-unchecked:hover, .icon-radio-checked:hover, .icon-radio-unchecked:hover, .icon-thumbs-up:hover, .icon-star:hover, .icon-star-2:hover, .icon-star-3:hover, .icon-plus:hover, .icon-checkmark:hover, .icon-warning:hover, .icon-warning-2:hover, .icon-question:hover, .icon-question-2:hover, .icon-plus-circle:hover, .icon-plus-circle-2:hover, .icon-minus-circle:hover, .icon-minus-circle-2:hover, .icon-info:hover, .icon-info-2:hover, .icon-cancel-circle:hover, .icon-cancel-circle-2:hover, .icon-checkmark-circle:hover, .icon-checkmark-circle-2:hover, .icon-file-pdf:hover, .icon-newspaper:hover, .icon-pencil-2:hover, .icon-star-4:hover, .icon-search:hover, .icon-double-angle-left:hover, .icon-double-angle-right:hover, .icon-print:hover, .icon-opennewwindow:hover, .icon-filter:hover, .icon-remove:hover, .icon-disk:hover, .icon-undo:hover, .icon-redo:hover, .icon-eye:hover, .icon-eye-blocked:hover, .icon-facebook:hover, .icon-pinterest:hover, .icon-twitter-old:hover, .icon-folder-open:hover, .icon-calendar-2:hover, .icon-arrow-right-2:hover, .icon-arrow-left-2:hover, .icon-image:hover, .icon-images:hover, .icon-instagram:hover, .icon-google-plus:hover, .icon-scale-up:hover, .icon-scale-down:hover {
+  text-decoration: none !important;
+}
+
+/* line 49, ../sass/style.scss */
+.icon-certificate:before {
+  content: "\61";
+}
+
+/* line 52, ../sass/style.scss */
+.icon-leaf:before {
+  content: "\62";
+}
+
+/* line 55, ../sass/style.scss */
+.icon-home:before {
+  content: "\65";
+}
+
+/* line 58, ../sass/style.scss */
+.icon-home-2:before {
+  content: "\66";
+}
+
+/* line 61, ../sass/style.scss */
+.icon-pencil:before {
+  content: "\67";
+}
+
+/* line 64, ../sass/style.scss */
+.icon-stack:before {
+  content: "\68";
+}
+
+/* line 67, ../sass/style.scss */
+.icon-coin:before {
+  content: "\69";
+}
+
+/* line 70, ../sass/style.scss */
+.icon-support:before {
+  content: "\6a";
+}
+
+/* line 73, ../sass/style.scss */
+.icon-clock:before {
+  content: "\6b";
+}
+
+/* line 76, ../sass/style.scss */
+.icon-envelop:before {
+  content: "\6c";
+}
+
+/* line 79, ../sass/style.scss */
+.icon-mail-send:before {
+  content: "\6d";
+}
+
+/* line 82, ../sass/style.scss */
+.icon-calendar:before {
+  content: "\6e";
+}
+
+/* line 85, ../sass/style.scss */
+.icon-user:before {
+  content: "\6f";
+}
+
+/* line 88, ../sass/style.scss */
+.icon-bubbles:before {
+  content: "\70";
+}
+
+/* line 91, ../sass/style.scss */
+.icon-busy:before {
+  content: "\71";
+}
+
+/* line 94, ../sass/style.scss */
+.icon-vcard:before {
+  content: "\73";
+}
+
+/* line 97, ../sass/style.scss */
+.icon-cog:before {
+  content: "\74";
+}
+
+/* line 100, ../sass/style.scss */
+.icon-cog-2:before {
+  content: "\75";
+}
+
+/* line 103, ../sass/style.scss */
+.icon-bars:before {
+  content: "\76";
+}
+
+/* line 106, ../sass/style.scss */
+.icon-stats:before {
+  content: "\77";
+}
+
+/* line 109, ../sass/style.scss */
+.icon-dashboard:before {
+  content: "\78";
+}
+
+/* line 112, ../sass/style.scss */
+.icon-briefcase:before {
+  content: "\79";
+}
+
+/* line 115, ../sass/style.scss */
+.icon-resize:before {
+  content: "\7a";
+}
+
+/* line 118, ../sass/style.scss */
+.icon-enter:before {
+  content: "\41";
+}
+
+/* line 121, ../sass/style.scss */
+.icon-exit:before {
+  content: "\42";
+}
+
+/* line 124, ../sass/style.scss */
+.icon-arrow-up:before {
+  content: "\43";
+}
+
+/* line 127, ../sass/style.scss */
+.icon-arrow-right:before {
+  content: "\44";
+}
+
+/* line 130, ../sass/style.scss */
+.icon-arrow-down:before {
+  content: "\45";
+}
+
+/* line 133, ../sass/style.scss */
+.icon-arrow-left:before {
+  content: "\46";
+}
+
+/* line 136, ../sass/style.scss */
+.icon-checkbox:before {
+  content: "\47";
+}
+
+/* line 139, ../sass/style.scss */
+.icon-checkbox-unchecked:before {
+  content: "\48";
+}
+
+/* line 142, ../sass/style.scss */
+.icon-radio-checked:before {
+  content: "\49";
+}
+
+/* line 145, ../sass/style.scss */
+.icon-radio-unchecked:before {
+  content: "\4a";
+}
+
+/* line 148, ../sass/style.scss */
+.icon-thumbs-up:before {
+  content: "\4b";
+}
+
+/* line 151, ../sass/style.scss */
+.icon-star:before {
+  content: "\4c";
+}
+
+/* line 154, ../sass/style.scss */
+.icon-star-2:before {
+  content: "\4d";
+}
+
+/* line 157, ../sass/style.scss */
+.icon-star-3:before {
+  content: "\4e";
+}
+
+/* line 160, ../sass/style.scss */
+.icon-plus:before {
+  content: "\4f";
+}
+
+/* line 164, ../sass/style.scss */
+.icon-checkmark:before {
+  content: "\50";
+}
+
+/* line 167, ../sass/style.scss */
+.icon-warning:before {
+  content: "\51";
+}
+
+/* line 170, ../sass/style.scss */
+.icon-warning-2:before {
+  content: "\52";
+}
+
+/* line 173, ../sass/style.scss */
+.icon-question:before {
+  content: "\53";
+}
+
+/* line 176, ../sass/style.scss */
+.icon-question-2:before {
+  content: "\54";
+}
+
+/* line 179, ../sass/style.scss */
+.icon-plus-circle:before {
+  content: "\55";
+}
+
+/* line 182, ../sass/style.scss */
+.icon-plus-circle-2:before {
+  content: "\56";
+}
+
+/* line 185, ../sass/style.scss */
+.icon-minus-circle:before {
+  content: "\57";
+}
+
+/* line 188, ../sass/style.scss */
+.icon-minus-circle-2:before {
+  content: "\58";
+}
+
+/* line 191, ../sass/style.scss */
+.icon-info:before {
+  content: "\59";
+}
+
+/* line 194, ../sass/style.scss */
+.icon-info-2:before {
+  content: "\5a";
+}
+
+/* line 197, ../sass/style.scss */
+.icon-cancel-circle:before {
+  content: "\31";
+}
+
+/* line 200, ../sass/style.scss */
+.icon-cancel-circle-2:before {
+  content: "\32";
+}
+
+/* line 203, ../sass/style.scss */
+.icon-checkmark-circle:before {
+  content: "\33";
+}
+
+/* line 206, ../sass/style.scss */
+.icon-checkmark-circle-2:before {
+  content: "\34";
+}
+
+/* line 209, ../sass/style.scss */
+.icon-file-pdf:before {
+  content: "\39";
+}
+
+/* line 212, ../sass/style.scss */
+.icon-newspaper:before {
+  content: "\28";
+}
+
+/* line 215, ../sass/style.scss */
+.icon-pencil-2:before {
+  content: "\29";
+}
+
+/* line 218, ../sass/style.scss */
+.icon-star-4:before {
+  content: "\21";
+}
+
+/* line 221, ../sass/style.scss */
+.icon-search:before {
+  content: "\60";
+}
+
+/* line 224, ../sass/style.scss */
+.icon-double-angle-left:before {
+  content: "\63";
+}
+
+/* line 227, ../sass/style.scss */
+.icon-double-angle-right:before {
+  content: "\64";
+}
+
+/* line 230, ../sass/style.scss */
+.icon-print:before {
+  content: "\72";
+}
+
+/* line 233, ../sass/style.scss */
+.icon-opennewwindow:before {
+  content: "\5b";
+}
+
+/* line 236, ../sass/style.scss */
+.icon-filter:before {
+  content: "\5d";
+}
+
+/* line 239, ../sass/style.scss */
+.icon-remove:before {
+  content: "\30";
+}
+
+/* line 242, ../sass/style.scss */
+.icon-disk:before {
+  content: "\3c";
+}
+
+/* line 245, ../sass/style.scss */
+.icon-undo:before {
+  content: "\3e";
+}
+
+/* line 248, ../sass/style.scss */
+.icon-redo:before {
+  content: "\7b";
+}
+
+/* line 251, ../sass/style.scss */
+.icon-eye:before {
+  content: "\35";
+}
+
+/* line 254, ../sass/style.scss */
+.icon-eye-blocked:before {
+  content: "\36";
+}
+
+/* line 257, ../sass/style.scss */
+.icon-facebook:before {
+  content: "\37";
+}
+
+/* line 260, ../sass/style.scss */
+.icon-pinterest:before {
+  content: "\38";
+}
+
+/* line 263, ../sass/style.scss */
+.icon-twitter-old:before {
+  content: "\7c";
+}
+
+/* line 266, ../sass/style.scss */
+.icon-folder-open:before {
+  content: "\7d";
+}
+
+/* line 269, ../sass/style.scss */
+.icon-calendar-2:before {
+  content: "\7e";
+}
+
+/* line 272, ../sass/style.scss */
+.icon-arrow-right-2:before {
+  content: "\e001";
+}
+
+/* line 275, ../sass/style.scss */
+.icon-arrow-left-2:before {
+  content: "\23";
+}
+
+/* line 278, ../sass/style.scss */
+.icon-image:before {
+  content: "\24";
+}
+
+/* line 281, ../sass/style.scss */
+.icon-images:before {
+  content: "\25";
+}
+
+/* line 284, ../sass/style.scss */
+.icon-instagram:before {
+  content: "\5e";
+}
+
+/* line 287, ../sass/style.scss */
+.icon-google-plus:before {
+  content: "\26";
+}
+
+/* line 290, ../sass/style.scss */
+.icon-scale-up:before {
+  content: "\2a";
+}
+
+/* line 293, ../sass/style.scss */
+.icon-scale-down:before {
+  content: "\e003";
+}
+
+/* line 339, ../sass/style.scss */
+body {
+  font-family: ProximaNova-Regular;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+/* line 345, ../sass/style.scss */
+#ie7 .container,
+#ie8 .container {
+  width: auto;
+  max-width: 1170px;
+  min-width: 940px;
+}
+
+/* line 350, ../sass/style.scss */
+.container-fluid {
+  padding: 0;
+}
+
+/* line 353, ../sass/style.scss */
+.ya-pageheader {
+  padding: 28px 0 0;
+  margin: 0;
+  min-height: 123px;
+  border: none;
+  background-color: white;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#dddddd), color-stop(50%, white), to(white));
+  background-image: -webkit-linear-gradient(#dddddd, white 50%, white);
+  background-image: -moz-linear-gradient(top, #dddddd, white 50%, white);
+  background-image: -o-linear-gradient(#dddddd, white 50%, white);
+  background-image: linear-gradient(#dddddd, #ffffff 50%, #ffffff);
+  background-repeat: no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDDDDDD', endColorstr='#FFFFFFFF', GradientType=0);
+}
+/* line 359, ../sass/style.scss */
+.ya-pageheader .ya-logo {
+  text-align: center;
+}
+/* line 362, ../sass/style.scss */
+.ya-pageheader h2 {
+  margin: 44px 0 0;
+  font-size: 28px;
+  color: #b4341d;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+/* line 371, ../sass/style.scss */
+.ya-pagenav {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #b63310;
+  background-image: -moz-linear-gradient(top, #cb4810, #971512);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cb4810), to(#971512));
+  background-image: -webkit-linear-gradient(top, #cb4810, #971512);
+  background-image: -o-linear-gradient(top, #cb4810, #971512);
+  background-image: linear-gradient(to bottom, #cb4810, #971512);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCB4810', endColorstr='#FF971512', GradientType=0);
+  /*	ul{
+  		margin:0;
+  	}
+  	a{
+  		color: $white;
+  		display:block;
+  		font-family: $ProximaNovaSB;
+  		font-size:$AlternateFontSize;
+  		padding: 2px $basePadding;
+  		@include border-radius(20px);
+  		&:focus,
+  		&:hover{
+  			text-decoration : 	none;
+  			outline			:	none;
+  			background		: $red;
+  		}
+  	}
+  */
+}
+
+/* line 394, ../sass/style.scss */
+.ya-account-bar {
+  min-height: 58px;
+  text-align: right;
+  margin: 0;
+  border-bottom: 1px solid #D6CDBF;
+  background: url(http://yadnn7pdev.azurewebsites.net/Portals/_default/Skins/Bootstrap/img/account-bar-bg.jpg?1374791703) repeat-x;
+  /*	
+  	ul{
+  		margin:0;
+  		padding:$basePadding - 2 $basePadding * 2;
+  	}
+  	li{
+  		padding:0 $basePadding / 2 !important;
+  	}
+  	a{
+  		font-family: $ProximaNovaSB;
+  		color: $black;
+  		display:block;
+  	}
+  */
+}
+
+/* line 415, ../sass/style.scss */
+.ya-main-content {
+  min-height: 420px;
+  padding: 40px 30px;
+  border-right: 30px solid #f4f0eb;
+  border-left: 30px solid #f4f0eb;
+}
+
+/* line 421, ../sass/style.scss */
+.ya-footer-top {
+  background-color: #b63310;
+  background-image: -moz-linear-gradient(top, #cb4810, #971512);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cb4810), to(#971512));
+  background-image: -webkit-linear-gradient(top, #cb4810, #971512);
+  background-image: -o-linear-gradient(top, #cb4810, #971512);
+  background-image: linear-gradient(to bottom, #cb4810, #971512);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCB4810', endColorstr='#FF971512', GradientType=0);
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* line 426, ../sass/style.scss */
+.ya-footer-bottom {
+  padding: 40px 40px 74px;
+  text-align: center;
+}
+
+@media (max-width: 979px) {
+  /* line 434, ../sass/style.scss */
+  .ya-pageheader {
+    padding-top: 25px;
+  }
+
+  /*
+  .ya-pagenav{
+  	a{
+  		padding:0 $basePadding / 2;	
+  	}
+  }
+  */
+  /* line 444, ../sass/style.scss */
+  .ya-main-content {
+    border-right: 15px solid #f4f0eb;
+    border-left: 15px solid #f4f0eb;
+  }
+}
+@media (max-width: 767px) {
+  /* line 450, ../sass/style.scss */
+  body {
+    padding: 0;
+  }
+
+  /* line 453, ../sass/style.scss */
+  .ya-pageheader {
+    padding-top: 0;
+  }
+  /* line 455, ../sass/style.scss */
+  .ya-pageheader .ya-tagline, .ya-pageheader .ya-logo {
+    padding: 10px 20px;
+  }
+  /* line 461, ../sass/style.scss */
+  .ya-pageheader h2 {
+    margin: 0;
+  }
+
+  /* line 465, ../sass/style.scss */
+  .ya-pagenav, .ya-footer-bottom {
+    padding: 10px;
+    /*	
+    	li:not(.divider){
+    		display:block !important;
+    		text-align:left;
+    		padding:0;
+    	}
+    	ul{
+    		display:none;
+    	}
+    	a{
+    		padding:$basePadding / 2;
+    		@include border-radius(0)
+    	}
+    */
+  }
+
+  /* line 482, ../sass/style.scss */
+  .ya-main-content {
+    border-right: 5px solid #f4f0eb;
+    border-left: 5px solid #f4f0eb;
+  }
+
+  /* line 490, ../sass/style.scss */
+  .ya-footer-bottom .divider {
+    display: none;
+  }
+}
